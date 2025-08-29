@@ -1,0 +1,22 @@
+[package]
+name = "boost_stacktrace"
+description = "Boost C++ library boost_stacktrace packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_stacktrace"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_stacktrace"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_winapi = { version = "0.1.0", path = "../boost_winapi" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
